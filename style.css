@@ -1169,6 +1169,7 @@ body .wraper footer .footer-information p {
   }
   body .wraper .nav .container .nav-main {
     max-width: 360px;
+    padding: 0 10px;
   }
   body .wraper .nav .container .nav-main .nav_navigate .nav_link a {
     margin-right: 17px;
