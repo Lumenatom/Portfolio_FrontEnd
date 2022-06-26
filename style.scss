@@ -1435,6 +1435,9 @@ body {
                             flex-wrap: nowrap;
                             align-items: center;
                             justify-content: space-between;
+                            display: flex;
+                            order: 1;
+
 
 
                             .description {
@@ -1629,14 +1632,14 @@ body {
 
 
                 width: 400px;
-                padding: 5px 0;
+                padding: 10px 0;
 
                 .container {
 
 
                     .nav-main {
                         max-width: 360px;
-                        padding: 0 10px;
+                        padding: 0 0 0 25px;
 
 
 
@@ -1649,7 +1652,7 @@ body {
 
 
                                 a {
-                                    margin-right: 17px;
+                                    margin-right: 15px;
                                     font-size: 12px;
                                 }
                             }
@@ -1659,8 +1662,7 @@ body {
                                     font-weight: 300;
                                     font-size: 12px;
                                     line-height: 10px;
-                                    padding: 3px 7px;
-                                    margin: 0;
+                                    padding: 5px 8px;
                                 }
                             }
                         }
@@ -1676,7 +1678,7 @@ body {
                 padding: 0 10px;
 
                 .header {
-                    margin-top: 45px;
+                    margin-top: 75px;
 
 
                     .header-main_block {
@@ -1759,6 +1761,7 @@ body {
                 .container {
 
                     .projects-block {
+                        display: flex;
                         flex-wrap: wrap;
                         gap: 0px;
                         padding-top: 25px;
@@ -1766,15 +1769,18 @@ body {
 
 
                         .projects-img {
+
+
                             img {
-                                width: 360px;
+                                width: 340px;
                                 height: 200px;
 
                             }
                         }
 
                         .projects-description {
-
+                            display: flex;
+                            order: 1;
 
 
                             .description {
@@ -1870,11 +1876,12 @@ body {
                             margin-right: 40px;
 
                             .footer-about-logo {
-                                margin-bottom: 25px;
+                                margin-bottom: 15px;
+
 
                                 img {
-                                    width: 161px;
-                                    height: 40px;
+                                    width: 101px;
+                                    height: 30px;
                                 }
                             }
 
