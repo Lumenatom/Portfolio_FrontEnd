@@ -351,6 +351,9 @@ body .wraper .projects .container .projects-block .projects-description {
   flex-wrap: wrap;
   align-content: space-between;
 }
+body .wraper .projects .container .projects-block .projects-description .description {
+  max-width: 70%;
+}
 body .wraper .projects .container .projects-block .projects-description .description h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
