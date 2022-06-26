@@ -102,12 +102,12 @@ body .wraper {
 body .wraper .background-image-header {
   content: "";
   background-image: url(./img/back.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 885px;
+  height: 895px;
   position: absolute;
-  opacity: 0.5;
-  filter: blur(2px);
+  opacity: 0.9;
 }
 body .wraper .nav {
   position: fixed;
@@ -118,10 +118,11 @@ body .wraper .nav {
   z-index: 2;
 }
 body .wraper .nav .container {
+  width: 1240px;
   padding: 0 20px;
 }
 body .wraper .nav .container .nav-main {
-  width: 1140px;
+  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,7 +142,7 @@ body .wraper .nav .container .nav-main .nav_navigate .nav_link a {
   margin-right: 47px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   color: #ffffff;
   text-decoration: none;
@@ -152,7 +153,7 @@ body .wraper .nav .container .nav-main .nav_navigate .nav_link a:hover {
 }
 body .wraper .nav .container .nav-main .nav_navigate .nav_button button {
   color: #ffffff;
-  background-color: #1B5FC1;
+  background-color: #424244;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -199,9 +200,10 @@ body .wraper .container .header .header-main_block .header_information .title {
 body .wraper .container .header .header-main_block .header_information .title h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 82px;
-  color: #0C122D;
+  font-size: 90px;
+  line-height: 85px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 body .wraper .container .header .header-main_block .header_information .description {
   width: 490px;
@@ -227,8 +229,8 @@ body .wraper .container .header .header-main_block .header_information .buttons 
   padding: 8px 24px;
   border-radius: 8px;
   color: #ffffff;
-  background-color: #1B5FC1;
-  box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+  background-color: #424244;
+  box-shadow: 0px 10px 15px rgba(27, 96, 193, 0.058);
 }
 body .wraper .container .header .header-main_block .header_information .buttons .header_button_two {
   font-family: "Rubik", sans-serif;
@@ -251,7 +253,7 @@ body .wraper .container .header .header-main_block .header_information .buttons 
   background-position: 0;
 }
 body .wraper .container .header .header-main_block .header_img img {
-  width: 496px;
+  width: 576px;
   height: 714px;
   border-radius: 16px 16px 16px 0px;
 }
@@ -278,12 +280,13 @@ body .wraper .container .header .header-item_block .header-item-descriptions {
   flex-wrap: wrap;
   gap: 20px 30px;
   padding-top: 45px;
+  justify-content: space-between;
 }
 body .wraper .container .header .header-item_block .header-item-descriptions .hard_skill {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 23%;
+  width: 22%;
 }
 body .wraper .container .header .header-item_block .header-item-descriptions .hard_skill .hard_skill-img {
   margin-right: 25px;
@@ -376,7 +379,7 @@ body .wraper .projects .container .projects-block .projects-description .project
   padding: 8px 24px;
   border-radius: 8px;
   color: #ffffff;
-  background-color: #1B5FC1;
+  background-color: #424244;
   box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
 }
 body .wraper .projects .container .projects-block .projects-description .project-buttons .project-button_two {
@@ -558,7 +561,7 @@ body .wraper footer .footer-information p {
   }
   body .wraper .nav .container .nav-main .nav_navigate .nav_button button {
     color: #ffffff;
-    background-color: #1B5FC1;
+    background-color: #424244;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -891,7 +894,7 @@ body .wraper footer .footer-information p {
 }
 @media only screen and (max-width: 480px) {
   body .wraper .background-image-header {
-    height: 405px;
+    height: 290px;
   }
   body .wraper .nav {
     width: 480px;
@@ -904,6 +907,7 @@ body .wraper footer .footer-information p {
   }
   body .wraper .nav .container .nav-main {
     width: 460px;
+    margin-left: 20px;
   }
   body .wraper .nav .container .nav-main .nav_logo {
     display: none;
@@ -978,7 +982,7 @@ body .wraper footer .footer-information p {
   }
   body .wraper .container .header .header-main_block .header_information .buttons .header_button_two {
     font-size: 14px;
-    padding: 5px 20px;
+    padding: 5px 10px;
     font-weight: 450;
   }
   body .wraper .container .header .header-main_block .header_img {
@@ -1163,7 +1167,7 @@ body .wraper footer .footer-information p {
 }
 @media only screen and (max-width: 400px) {
   body .wraper .background-image-header {
-    height: 405px;
+    height: 280px;
   }
   body .wraper .nav {
     width: 400px;
