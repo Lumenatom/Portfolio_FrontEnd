@@ -7,7 +7,7 @@ $color-Blue: #424244;
 // $color-Blue: #1B5FC1;
 $color-Yellow: #FFB800;
 $color-Grey: #575C74;
-$color-Background: #F5FCFA;
+$color-Background: #171717;
 $color-Black: #000000;
 
 
@@ -24,47 +24,47 @@ $color-Black: #000000;
 body {
     background-color: #E5E5E5;
 
-
-
     .wraper {
-        max-width: 1920px;
+        max-width: 100%;
         background-color: $color-Background;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         position: relative;
+        overflow: hidden;
 
         .background-image-header {
-            content: "";
             // background-image: url(./img/background-header.jpg);
             background-image: url(./img/back.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 895px;
+            height: 795px;
             position: absolute;
             opacity: 0.9;
-            // filter: blur(3px);
-
+            top: 0%;
         }
 
 
         .nav {
             position: fixed;
+            top: 0;
 
-            width: 1920px;
+            width: 100%;
             background-color: #00000080;
             backdrop-filter: blur(50px);
             padding: 15px 0;
             z-index: 2;
 
             .container {
-                width: 1240px;
-                padding: 0 20px;
+                width: 100%;
+                padding: 0 50px;
+
 
                 .nav-main {
-                    width: 1200px;
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -119,11 +119,11 @@ body {
         }
 
         .container {
-            width: 1140px;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            padding: 0 20px;
+            padding: 0 50px;
             position: relative;
 
 
@@ -197,10 +197,10 @@ body {
 
                             .header_button_two {
                                 @include buttons();
-                                background-color: $color-Background;
+                                background-color: $color-White;
                                 color: $color-Black;
                                 border: 1px solid $color-Yellow;
-
+                                padding: 7px 24px;
                                 background-image: -webkit-linear-gradient(45deg, $color-Yellow 50%, transparent 50%);
                                 background-image: linear-gradient(45deg, $color-Yellow 50%, transparent 50%);
                                 background-position: 100%;
@@ -217,8 +217,8 @@ body {
 
                     .header_img {
                         img {
-                            width: 576px;
-                            height: 714px;
+                            width: 476px;
+                            height: 574px;
                             border-radius: 16px 16px 16px 0px;
                         }
                     }
@@ -230,18 +230,18 @@ body {
                     flex-wrap: wrap;
                     margin-bottom: 53px;
 
-
-
                     .header-item-title {
-                        padding-top: 45px;
+                        padding-top: 60px;
+
 
                         h3 {
                             font-family: $fontFamily-Rubik;
                             font-weight: 700;
                             font-size: 72px;
                             line-height: 82px;
-                            color: $color-Dark;
+                            color: $color-White;
                             padding: 35px 0 0px;
+                            font-style: italic;
                             border-bottom: 2px solid $color-Yellow;
 
                         }
@@ -250,53 +250,277 @@ body {
                     .header-item-descriptions {
                         display: flex;
                         flex-wrap: wrap;
-                        gap: 20px 30px;
+                        gap: 25px;
                         padding-top: 45px;
-                        justify-content: space-between;
+                        justify-content: center;
 
                         .hard_skill {
                             display: flex;
                             flex-wrap: nowrap;
-                            justify-content: space-between;
-                            width: 22%;
+                            width: 270px;
+                            height: 270px;
+                            border-radius: 20px;
+                            padding: 20px;
 
-
-                            .hard_skill-img {
-                                margin-right: 25px;
-
-                                img {
-                                    width: 50px;
-                                    height: 50px;
-                                }
-                            }
 
                             .hard_skill-description {
+                                width: 100%;
+                                display: none;
+                                flex-direction: column;
+
                                 h3 {
                                     font-family: $fontFamily-OpenSans;
                                     font-style: normal;
                                     font-weight: 700;
-                                    font-size: 20px;
-                                    line-height: 28px;
-                                    color: $color-Dark;
+                                    font-size: 34px;
+                                    color: $color-Black;
                                     margin-bottom: 15px;
+                                    text-align: center;
                                 }
 
                                 ul {
+                                    list-style-position: outside;
+
                                     li {
+
                                         list-style: inside;
                                         font-family: $fontFamily-OpenSans;
                                         font-style: normal;
-                                        font-weight: 400;
-                                        font-size: 15px;
-                                        line-height: 22px;
+                                        font-weight: 500;
+                                        font-size: 20px;
                                         color: $color-Grey;
-                                        margin-bottom: 5px;
+                                        margin-bottom: 10px;
+                                        color: $color-Black;
                                     }
                                 }
                             }
                         }
-                    }
 
+                        .hard_skill:nth-child(1) {
+                            background-image: url(./img/html-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(2) {
+                            background-image: url(./img/css-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(3) {
+                            background-image: url(./img/pug-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(4) {
+                            background-image: url(./img/sass-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(5) {
+                            background-image: url(./img/boot-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(6) {
+                            background-image: url(./img/tailwind-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(7) {
+                            background-image: url(./img/js-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(8) {
+                            background-image: url(./img/react-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(9) {
+                            background-image: url(./img/redux-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(10) {
+                            background-image: url(./img/native-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(11) {
+                            background-image: url(./img/expo-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(12) {
+                            background-image: url(./img/jquery-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(13) {
+                            background-image: url(./img/node-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(14) {
+                            background-image: url(./img/git-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(15) {
+                            background-image: url(./img/vs-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .hard_skill:nth-child(16) {
+                            background-image: url(./img/adaptive-1.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background: rgb(255, 255, 255);
+
+
+                                .hard_skill-description {
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -304,7 +528,7 @@ body {
         }
 
         .projects {
-            max-width: 1920px;
+            width: 100%;
             padding-top: 45px;
             padding-bottom: 45px;
             margin: 0 auto;
@@ -313,16 +537,17 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                padding: 0 20px;
+                padding: 0 50px;
 
 
                 .projects-title {
                     h3 {
                         font-family: $fontFamily-Rubik;
+                        font-style: italic;
                         font-weight: 700;
                         font-size: 72px;
                         line-height: 82px;
-                        color: $color-Dark;
+                        color: $color-White;
                         padding: 35px 0 0px;
                         border-bottom: 2px solid $color-Yellow;
 
@@ -330,35 +555,43 @@ body {
                 }
 
                 .projects-block {
+                    width: 100%;
                     display: flex;
+                    flex-direction: column;
                     gap: 47px;
                     padding-top: 45px;
                     margin-bottom: 60px;
+                    justify-content: space-between;
 
                     .projects-img {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 500px;
+
+
                         img {
-                            width: 640px;
-                            height: 360px;
+                            background: #ffffff;
+                            width: 49%;
+                            height: 450px;
                             border-radius: 16px 16px 16px 0px;
                         }
                     }
 
                     .projects-description {
                         display: flex;
-                        flex-wrap: wrap;
-                        align-content: space-between;
+                        justify-content: space-between;
 
 
                         .description {
-                            max-width: 70%;
 
                             h3 {
                                 font-family: $fontFamily-Rubik;
                                 font-weight: 700;
                                 font-size: 48px;
                                 line-height: 50px;
-                                color: $color-Dark;
-                                margin-bottom: 35px;
+                                color: $color-White;
+                                margin-bottom: 10px;
                             }
 
                             .project-description {
@@ -368,7 +601,7 @@ body {
                                     font-weight: 700;
                                     font-size: 16px;
                                     line-height: 30px;
-                                    color: $color-Grey;
+                                    color: $color-White;
                                 }
                             }
                         }
@@ -379,16 +612,15 @@ body {
 
                             .project-button_one {
                                 @include buttons();
-                                color: $color-White;
-                                background-color: $color-Blue;
-                                box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+                                color: $color-Black;
+                                background-color: $color-White;
 
                             }
 
                             .project-button_two {
                                 @include buttons();
                                 background-color: $color-Background;
-                                color: $color-Black;
+                                color: $color-White;
                                 border: 1px solid $color-Yellow;
                                 background-image: -webkit-linear-gradient(45deg, $color-Yellow 50%, transparent 50%);
                                 background-image: linear-gradient(45deg, $color-Yellow 50%, transparent 50%);
@@ -408,7 +640,7 @@ body {
         }
 
         .contacts {
-            width: 1920px;
+            width: 100%;
             background-color: $color-Yellow;
 
 
