@@ -255,15 +255,15 @@ body {
                     .header-item-descriptions {
                         display: flex;
                         flex-wrap: wrap;
-                        gap: 25px;
+                        gap: 20px;
                         padding-top: 45px;
                         justify-content: center;
 
                         .hard_skill {
                             display: flex;
                             flex-wrap: nowrap;
-                            width: 270px;
-                            height: 270px;
+                            width: 200px;
+                            height: 200px;
                             border-radius: 20px;
                             padding: 20px;
 
@@ -277,7 +277,7 @@ body {
                                     font-family: $fontFamily-OpenSans;
                                     font-style: normal;
                                     font-weight: 700;
-                                    font-size: 34px;
+                                    font-size: 22px;
                                     color: $color-Black;
                                     margin-bottom: 15px;
                                     text-align: center;
@@ -292,7 +292,7 @@ body {
                                         font-family: $fontFamily-OpenSans;
                                         font-style: normal;
                                         font-weight: 500;
-                                        font-size: 20px;
+                                        font-size: 14px;
                                         color: $color-Grey;
                                         margin-bottom: 10px;
                                         color: $color-Black;
@@ -542,7 +542,7 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                padding: 0 200px;
+                padding: 0 150px;
 
 
                 .projects-title {
@@ -588,6 +588,7 @@ body {
                     .projects-description {
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
 
 
                         .description {
@@ -654,7 +655,7 @@ body {
 
             .container {
                 display: block;
-                padding: 0 20px;
+                padding: 0 50px;
 
 
                 .contacts-main {
@@ -715,7 +716,7 @@ body {
 
             .container {
                 display: block;
-                padding: 0 20px;
+                padding: 0 50px;
 
 
                 .footer-main {
