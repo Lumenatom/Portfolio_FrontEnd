@@ -88,169 +88,295 @@ h6 {
 }
 
 body .wraper {
-  background-color: #2C2C2C;
   width: 100%;
+  overflow: hidden;
 }
-body .wraper .container {
-  max-width: 1200px;
-  height: 815px;
-  margin: 0 auto;
-}
-body .wraper .container .header {
+body .wraper .header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #2C2C2C;
+  background-color: black;
 }
-body .wraper .container .header .header_main {
+body .wraper .header .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-body .wraper .container .header .header_main .nav {
+body .wraper .header .container .header_item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
 }
-body .wraper .container .header .header_main .nav .logo_header {
+body .wraper .header .container .header_item .nav-link ul {
   display: flex;
-  align-items: center;
+  gap: 60px;
 }
-body .wraper .container .header .header_main .nav .logo_header img {
-  width: 55px;
-}
-body .wraper .container .header .header_main .nav .logo_header h2 {
+body .wraper .header .container .header_item .nav-link ul li a {
   font-size: 20px;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 300;
-  color: #fff;
-}
-body .wraper .container .header .header_main .nav .nav_item {
-  display: flex;
-  gap: 40px;
-}
-body .wraper .container .header .header_main .nav .nav_item a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  border-bottom: 1px solid #2C2C2C;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
 }
-body .wraper .container .header .header_main .nav .nav_item a:hover {
-  border-bottom: 1px solid #E2A300;
+body .wraper .header .container .header_item .nav-link ul li a:hover {
+  border-bottom: 1px solid white;
   transition: linear 0.3s;
 }
-body .wraper .container .about_me {
+body .wraper .about-me {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/about-me/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .wraper .about-me .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.67);
+}
+body .wraper .about-me .content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+body .wraper .about-me .content .container .about-me_item {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 175px;
 }
-body .wraper .container .about_me .title .description {
-  margin-bottom: 27px;
-}
-body .wraper .container .about_me .title .description h3 {
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 65px;
+body .wraper .about-me .content .container .about-me_item .title .description h3 {
+  color: white;
   font-family: "Montserrat", sans-serif;
-  color: #E4E4E4;
-}
-body .wraper .container .about_me .title .description h2 {
-  font-weight: 700;
-  font-size: 82px;
-  line-height: 82px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-body .wraper .container .about_me .title .description h4 {
+  font-size: 36px;
   font-weight: 200;
-  font-size: 24px;
-  line-height: 32px;
-  color: #E4E4E4;
-  font-family: "Noto Sans", sans-serif;
-  max-width: 500px;
+  line-height: 120%;
 }
-body .wraper .container .about_me .title .buttons {
+body .wraper .about-me .content .container .about-me_item .title .description h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 110%;
+}
+body .wraper .about-me .content .container .about-me_item .title .description h4 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  max-width: 700px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+body .wraper .about-me .content .container .about-me_item .title .buttons {
   display: flex;
-  gap: 15px;
+  gap: 25px;
+  margin-top: 45px;
 }
-body .wraper .container .about_me .title .buttons a:nth-child(1) {
+body .wraper .about-me .content .container .about-me_item .title .buttons a {
   text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 20px;
-  color: #000000;
-  padding: 14px 40px;
-  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
-  box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
-  border-radius: 6px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: white;
+  padding: 15px 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: black;
 }
-body .wraper .container .about_me .title .buttons a:nth-child(2) {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 20px;
-  color: #000;
-  padding: 14px 40px;
-  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
-  box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
-  border-radius: 6px;
-  font-family: "Noto Sans", sans-serif;
+body .wraper .about-me .content .container .about-me_item .title .buttons a:hover {
+  background: white;
+  color: black;
+  transition: linear 0.3s;
+}
+body .wraper .about-me .content .container .about-me_item img {
+  width: 500px;
+  border-radius: 10px;
 }
 body .wraper .skills {
-  background-color: #414141;
   width: 100%;
-  height: 3787px;
-  padding-top: 110px;
+  height: 100%;
+  background-image: url("./img/skills/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body .wraper .skills .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-body .wraper .skills .container .block_one {
+body .wraper .skills .content_skills {
   width: 100%;
-  background: #136a8a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #267871, #136a8a); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 45px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+body .wraper .skills .content_skills .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+body .wraper .skills .content_skills .container .skills_item {
+  padding: 65px 0;
+}
+body .wraper .skills .content_skills .container .skills_item .skills-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+body .wraper .skills .content_skills .container .skills_item .skills-title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+body .wraper .skills .content_skills .container .skills_item .skills-block {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
-  padding: 20px 25px;
+  row-gap: 50px;
 }
-body .wraper .skills .container .block_one:nth-child(2) {
-  background: #4B79A1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4B79A1, #283E51); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4B79A1, #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-body .wraper .skills .container .block_one:nth-child(3) {
-  background: #5f2c82; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #5f2c82, #49a09d); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #5f2c82, #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-body .wraper .skills .container .block_one .item {
+body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 17px;
+}
+body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner img {
+  width: 150px;
+  border-radius: 10px;
+}
+body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+body .wraper .skills .content_skills .container .skills_item hr {
+  width: 100%;
+  height: 1px;
+  background: white;
+  margin: 50px 0;
+}
+body .wraper .projects {
+  width: 100%;
+  height: 3000px;
+  background: rgba(20, 20, 30, 0.4);
+}
+body .wraper .projects .content_projects {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+body .wraper .projects .content_projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+body .wraper .projects .content_projects .container .projects_item {
+  padding: 65px 0;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+  display: flex;
+  max-width: 60%;
   gap: 10px;
 }
-body .wraper .skills .container .block_one .item h3 {
-  color: #E4E4E4;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button {
+  background: none;
 }
-body .wraper .skills .container .block_one .item img {
-  max-height: 100px;
-  border-radius: 25px;
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button img {
+  width: 30px;
+  fill: white;
+  color: white;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button:nth-child(1) {
+  transform: rotate(180deg);
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .slider {
+  width: 100%;
+  overflow: hidden;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .slider .images {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  left: 0;
+  transition: ease 0.8s;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .slider .images img {
+  max-width: 100%;
+  height: auto;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title {
+  margin-bottom: 25px;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  line-height: 120%;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description {
+  margin-bottom: 50px;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  line-height: 120%;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project {
+  display: flex;
+  gap: 25px;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: black;
+}
+body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a:hover {
+  background: white;
+  color: black;
+  transition: linear 0.3s;
+}
+body .wraper .contacts {
+  width: 100%;
+  height: 100vh;
+  background: aqua;
+}
+body .wraper .footer {
+  width: 100%;
+  height: 100vh;
+  background: #2C2C2C;
 }
 
 /*# sourceMappingURL=style.css.map */
