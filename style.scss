@@ -14,6 +14,7 @@ body {
       position: fixed;
       top: 0;
       left: 0;
+      z-index: 99;
       background-color: black;
 
       .container {
@@ -162,10 +163,11 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
 
+
       .content_skills {
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.90);
+        background: rgba(0, 0, 0, 0.80);
 
         .container {
           max-width: 1200px;
@@ -229,13 +231,11 @@ body {
 
     .projects {
       width: 100%;
-      //height: 100%;
-      height: 3000px;
-      background: rgba(20, 20, 30, 0.40);
-      //background-image: url("./img/skills/bg.jpg");
-      //background-position: center;
-      //background-repeat: no-repeat;
-      //background-size: cover;
+      height: 100%;
+      background-image: url("./img/projects/bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
       .content_projects {
         width: 100%;
@@ -264,6 +264,10 @@ body {
             }
 
             .projects-main {
+              display: flex;
+              flex-direction: column;
+              gap: 50px;
+
               .project_block {
                 display: flex;
                 gap: 30px;
@@ -292,17 +296,16 @@ body {
                   .slider {
                     width: 100%;
                     overflow: hidden;
+                    border-radius: 10px;
 
 
                     .images {
                       display: flex;
                       width: 100%;
-                      border-radius: 10px;
+                      height: 360px;
                       position: relative;
                       left: 0;
                       transition: ease 0.8s;
-                      //border: 1px solid red;
-
 
                       img {
                         max-width: 100%;
@@ -320,7 +323,6 @@ body {
                       font-family: $Font-familyMontserrat;
                       font-size: 32px;
                       font-weight: 600;
-                      //text-transform: uppercase;
                       color: white;
                       line-height: 120%;
                     }
@@ -347,7 +349,6 @@ body {
                       text-decoration: none;
                       font-family: "Montserrat", sans-serif;
                       font-size: 16px;
-                      //text-transform: uppercase;
                       font-style: italic;
                       font-weight: 300;
                       color: white;
@@ -376,14 +377,253 @@ body {
 
     .contacts {
       width: 100%;
-      height: 100vh;
-      background: aqua;
+      height: 100%;
+      //background-image: url("./img/contacts/bg.jpg");
+      //background-position: center;
+      //background-repeat: no-repeat;
+      //background-size: cover;
+      background: white;
+
+      .content_contacts {
+        width: 100%;
+        height: 100%;
+        //background: rgba(0, 0, 0, 0.90);
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          height: 100%;
+
+          .contacts_item {
+            padding: 25px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            //justify-content: space-between;
+
+            .contacts_me {
+              display: flex;
+              justify-content: space-between;
+
+              img {
+                width: 40px;
+                margin-right: 10px;
+              }
+
+              h3 {
+                font-family: $Font-familyMontserrat;
+                font-size: 22px;
+                font-weight: 400;
+                color: Black;
+                line-height: 120%;
+                border-bottom: 1px solid white;
+                padding-bottom: 2px;
+
+                &:hover {
+                  border-bottom: 1px solid black;
+                  transition: linear 0.3s;
+
+                }
+              }
+
+              hr {
+                width: 1px;
+                height: 50px;
+                background: black;
+              }
+
+              .email {
+                display: flex;
+                align-items: center;
+              }
+
+              .telegram {
+                display: flex;
+                align-items: center;
+
+              }
+
+              .phone {
+                display: flex;
+                align-items: center;
+
+              }
+
+              .github {
+                display: flex;
+                align-items: center;
+
+              }
+            }
+
+          }
+        }
+      }
     }
 
     .footer {
       width: 100%;
-      height: 100vh;
-      background: #2C2C2C;
+      height: 100%;
+      background: black;
+
+      h3 {
+        text-align: center;
+        padding: 65px 0 10px;
+        font-family: $Font-familyMontserrat;
+        font-size: 14px;
+        font-weight: 200;
+        //text-transform: uppercase;
+        color: white;
+        line-height: 120%;
+      }
     }
+
+
   }
 }
+
+@media screen and (max-width: 1220px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body .wraper .about-me .content .container .about-me_item img {
+    width: 300px;
+  }
+  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body .wraper .about-me .content .container .about-me_item .title .description h3 {
+    font-size: 20px;
+  }
+  body .wraper .about-me .content .container .about-me_item .title .description h2 {
+    font-size: 34px;
+  }
+  body .wraper .about-me .content .container .about-me_item .title .description h4 {
+    font-size: 20px;
+  }
+  body .wraper .about-me .content .container .about-me_item .title .buttons a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  body .wraper .about-me .content .container .about-me_item img {
+    width: 200px;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-title h2 {
+    font-size: 32px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-title h2 {
+    font-size: 32px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+    max-width: 80%;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title {
+    margin-bottom: 10px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description {
+    margin-bottom: 20px;
+  }
+  .project-description {
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    img {
+      width: 70px;
+    }
+  }
+  body .wraper .header {
+    height: 50px;
+  }
+  .nav-link {
+    display: none;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner {
+    gap: 10px;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner img {
+    width: 80px;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner h3 {
+    font-size: 12px;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    row-gap: 30px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+    max-width: 100%;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
+    font-size: 24px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description h4 {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
+    padding: 10px 15px;
+  }
+  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me h3 {
+    font-size: 18px;
+  }
+  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 0 10px;
+  }
+  body .wraper .about-me {
+    height: 100%;
+
+  }
+  body .wraper .about-me .content .container .about-me_item {
+    padding-top: 60px;
+    flex-direction: column-reverse;
+  }
+  body .wraper .about-me .content .container .about-me_item img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  body .wraper .about-me .content .container .about-me_item .title {
+    width: 100%;
+  }
+
+  body .wraper .about-me .content .container .about-me_item .title .buttons {
+    margin-top: 15px;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-block {
+    gap: 7px;
+    row-gap: 20px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+    height: 300px;
+    flex-direction: column;
+  }
+
+
+}
+
