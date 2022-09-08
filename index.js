@@ -15,6 +15,7 @@ for (let anchor of anchors) {
 
 const imageBlock = document.querySelector(".images");
 const leftArrow = document.querySelector(".left-arrow");
+const moveArrow = document.querySelector(".move_arrow");
 const rightArrow = document.querySelector(".right-arrow");
 let offset = 0;
 let width;
@@ -35,10 +36,12 @@ const slideRight = () => {
     imageBlock.style.left = -offset + "px";
 }
 leftArrow.addEventListener("click", slideLeft);
+moveArrow.addEventListener("click", slideLeft);
 rightArrow.addEventListener("click", slideRight);
 
 const imageBlock_2 = document.querySelector("#images-2");
 const leftArrow_2 = document.querySelector("#left-arrow-2");
+const moveArrow_2 = document.querySelector("#move_arrow-2");
 const rightArrow_2 = document.querySelector("#right-arrow-2");
 let offset_2 = 0;
 let width_2;
@@ -59,10 +62,12 @@ const slideRight_2 = () => {
     imageBlock_2.style.left = -offset_2 + "px";
 }
 leftArrow_2.addEventListener("click", slideLeft_2);
+moveArrow_2.addEventListener("click", slideLeft_2);
 rightArrow_2.addEventListener("click", slideRight_2);
 
 const imageBlock_3 = document.querySelector("#images-3");
 const leftArrow_3 = document.querySelector("#left-arrow-3");
+const moveArrow_3 = document.querySelector("#move_arrow-3");
 const rightArrow_3 = document.querySelector("#right-arrow-3");
 let offset_3 = 0;
 let width_3;
@@ -83,4 +88,5 @@ const slideRight_3 = () => {
     imageBlock_3.style.left = -offset_3 + "px";
 }
 leftArrow_3.addEventListener("click", slideLeft_3);
+moveArrow_3.addEventListener("click", slideLeft_3);
 rightArrow_3.addEventListener("click", slideRight_3);
