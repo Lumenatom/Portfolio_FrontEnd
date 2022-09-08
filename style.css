@@ -91,6 +91,37 @@ body .wraper {
   width: 100%;
   overflow: hidden;
 }
+body .wraper .menu-mob {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 98;
+}
+body .wraper .menu-mob .nav-link-mob ul {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+body .wraper .menu-mob .nav-link-mob ul li a {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+body .wraper .menu-mob .nav-link-mob ul li a:hover {
+  border-bottom: 1px solid white;
+  transition: linear 0.3s;
+}
+body .wraper .menu-mob-active {
+  display: flex;
+}
 body .wraper .header {
   width: 100%;
   position: fixed;
@@ -125,6 +156,9 @@ body .wraper .header .container .header_item .nav-link ul li a {
 body .wraper .header .container .header_item .nav-link ul li a:hover {
   border-bottom: 1px solid white;
   transition: linear 0.3s;
+}
+body .wraper .header .container .header_item .burger img {
+  width: 35px;
 }
 body .wraper .about-me {
   width: 100%;
@@ -202,10 +236,6 @@ body .wraper .about-me .content .container .about-me_item img {
 body .wraper .skills {
   width: 100%;
   height: 100%;
-  background-image: url("./img/skills/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 body .wraper .skills .content_skills {
   width: 100%;
@@ -264,10 +294,6 @@ body .wraper .skills .content_skills .container .skills_item hr {
 body .wraper .projects {
   width: 100%;
   height: 100%;
-  background-image: url("./img/projects/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 body .wraper .projects .content_projects {
   width: 100%;
@@ -543,6 +569,9 @@ body .wraper .footer h3 {
   body .wraper .header {
     height: 50px;
   }
+  body .wraper .header .container .header_item {
+    align-items: flex-start;
+  }
   .nav-link {
     display: none;
   }
@@ -606,9 +635,14 @@ body .wraper .footer h3 {
   }
   body .wraper .about-me .content .container .about-me_item .title .description h2 {
     text-align: center;
+    font-size: 52px;
   }
   body .wraper .about-me .content .container .about-me_item .title .description h4 {
     text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 50px;
   }
   body .wraper .about-me .content .container .about-me_item .title .buttons {
     justify-content: center;
@@ -635,16 +669,17 @@ body .wraper .footer h3 {
     text-align: center;
   }
   body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description h4 {
-    font-size: 10px;
+    font-size: 12px;
   }
   body .wraper .footer h3 {
     font-size: 14px;
   }
   body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
-    padding: 8px 12px;
+    padding: 15px 25px;
+    font-size: 18px;
   }
   body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
     gap: 15px;
@@ -653,7 +688,7 @@ body .wraper .footer h3 {
     gap: 70px;
   }
   body .wraper .projects .content_projects .container .projects_item {
-    padding: 35px 0;
+    padding: 55px 0;
   }
   body .wraper .projects .content_projects .container .projects_item .projects-title {
     margin-bottom: 20px;
@@ -662,7 +697,11 @@ body .wraper .footer h3 {
     margin-bottom: 20px;
   }
   body .wraper .skills .content_skills .container .skills_item {
-    padding: 35px 0;
+    padding: 55px 0;
+  }
+  body .wraper .about-me .content .container .about-me_item .title .buttons a {
+    font-size: 22px;
+    padding: 15px 20px;
   }
 }
 

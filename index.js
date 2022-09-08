@@ -90,3 +90,16 @@ const slideRight_3 = () => {
 leftArrow_3.addEventListener("click", slideLeft_3);
 moveArrow_3.addEventListener("click", slideLeft_3);
 rightArrow_3.addEventListener("click", slideRight_3);
+
+
+const burger = document.querySelector('.burger');
+burger.addEventListener('click', () => {
+    document.querySelector('.menu-mob').classList.toggle('menu-mob-active');
+})
+
+const links = document.querySelectorAll('.links-mob');
+links.forEach((e) => {
+    e.addEventListener('click', () => {
+        document.querySelector('.menu-mob').classList.remove('menu-mob-active');
+    })
+})
