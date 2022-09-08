@@ -99,7 +99,7 @@ body .wraper .menu-mob {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: 98;
+  z-index: 99;
 }
 body .wraper .menu-mob .nav-link-mob ul {
   display: flex;
@@ -120,6 +120,7 @@ body .wraper .menu-mob .nav-link-mob ul li a:hover {
   transition: linear 0.3s;
 }
 body .wraper .menu-mob-active {
+  transition: all linear 5s;
   display: flex;
 }
 body .wraper .header {
@@ -137,7 +138,12 @@ body .wraper .header .container {
 body .wraper .header .container .header_item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 5px 0 0 0;
+}
+body .wraper .header .container .header_item .logo {
+  padding: 10px 0;
+}
+body .wraper .header .container .header_item .nav-link {
   padding: 10px 0;
 }
 body .wraper .header .container .header_item .nav-link ul {
@@ -157,8 +163,11 @@ body .wraper .header .container .header_item .nav-link ul li a:hover {
   border-bottom: 1px solid white;
   transition: linear 0.3s;
 }
+body .wraper .header .container .header_item .burger {
+  padding: 0px 0;
+}
 body .wraper .header .container .header_item .burger img {
-  width: 35px;
+  width: 40px;
 }
 body .wraper .about-me {
   width: 100%;
