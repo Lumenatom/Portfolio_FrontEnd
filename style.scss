@@ -293,6 +293,7 @@ body {
 
                       img {
                         width: 40px;
+                        transform: rotate(180deg);
                       }
 
                       h2 {
@@ -625,11 +626,12 @@ body {
     padding: 0 10px;
   }
   body .wraper .about-me {
+    padding-bottom: 35px;
     height: 100%;
 
   }
   body .wraper .about-me .content .container .about-me_item {
-    padding-top: 60px;
+    padding-top: 52px;
     flex-direction: column-reverse;
   }
   body .wraper .about-me .content .container .about-me_item img {
@@ -677,7 +679,31 @@ body {
     font-size: 10px;
   }
   body .wraper .footer h3 {
-    font-size: 10px;
+    font-size: 14px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
+    font-size: 18px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
+    padding: 8px 12px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
+    gap: 15px;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-main {
+    gap: 70px;
+  }
+  body .wraper .projects .content_projects .container .projects_item {
+    padding: 35px 0;
+  }
+  body .wraper .projects .content_projects .container .projects_item .projects-title {
+    margin-bottom: 20px;
+  }
+  body .wraper .skills .content_skills .container .skills_item .skills-title {
+    margin-bottom: 20px;
+  }
+  body .wraper .skills .content_skills .container .skills_item {
+    padding: 35px 0;
   }
 }
 
