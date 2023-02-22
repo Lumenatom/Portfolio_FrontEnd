@@ -38,6 +38,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: black;
 }
 
 input,
@@ -93,11 +94,11 @@ body .wraper {
 body .wraper .menu-mob {
   display: none;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: black;
   width: 100%;
   height: 100vh;
@@ -111,12 +112,12 @@ body .wraper .menu-mob .nav-link-mob ul {
   gap: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 body .wraper .menu-mob .nav-link-mob ul li a {
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: white;
   cursor: pointer;
@@ -152,11 +153,11 @@ body .wraper .header .container .header_item {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 5px 0 0 0;
 }
 body .wraper .header .container .header_item .logo {
@@ -176,7 +177,7 @@ body .wraper .header .container .header_item .nav-link ul {
 }
 body .wraper .header .container .header_item .nav-link ul li a {
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: #fff;
   cursor: pointer;
@@ -198,7 +199,7 @@ body .wraper .header .container .header_item .burger img {
 body .wraper .about-me {
   width: 100%;
   height: 100vh;
-  background-image: url("./img/about-me/hero-bg.jpg");
+  background-image: url('./img/about-me/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,29 +220,53 @@ body .wraper .about-me .content .container .about-me_item {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-body .wraper .about-me .content .container .about-me_item .title .description h3 {
+body
+  .wraper
+  .about-me
+  .content
+  .container
+  .about-me_item
+  .title
+  .description
+  h3 {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 200;
   line-height: 120%;
 }
-body .wraper .about-me .content .container .about-me_item .title .description h2 {
+body
+  .wraper
+  .about-me
+  .content
+  .container
+  .about-me_item
+  .title
+  .description
+  h2 {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 96px;
   font-weight: 700;
   line-height: 110%;
 }
-body .wraper .about-me .content .container .about-me_item .title .description h4 {
+body
+  .wraper
+  .about-me
+  .content
+  .container
+  .about-me_item
+  .title
+  .description
+  h4 {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 200;
   max-width: 700px;
@@ -257,7 +282,7 @@ body .wraper .about-me .content .container .about-me_item .title .buttons {
 }
 body .wraper .about-me .content .container .about-me_item .title .buttons a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-style: italic;
   font-weight: 300;
@@ -267,7 +292,15 @@ body .wraper .about-me .content .container .about-me_item .title .buttons a {
   border-radius: 10px;
   background: black;
 }
-body .wraper .about-me .content .container .about-me_item .title .buttons a:hover {
+body
+  .wraper
+  .about-me
+  .content
+  .container
+  .about-me_item
+  .title
+  .buttons
+  a:hover {
   background: white;
   color: black;
   -webkit-transition: linear 0.3s;
@@ -283,7 +316,13 @@ body .wraper .skills {
   background: #232526;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#414345),
+    to(#232526)
+  );
   background: linear-gradient(to right, #414345, #232526);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -305,7 +344,7 @@ body .wraper .skills .content_skills .container .skills_item .skills-title {
   margin-bottom: 50px;
 }
 body .wraper .skills .content_skills .container .skills_item .skills-title h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 56px;
   font-weight: 400;
   text-transform: uppercase;
@@ -316,32 +355,55 @@ body .wraper .skills .content_skills .container .skills_item .skills-block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 25px;
   row-gap: 50px;
 }
-body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner {
+body
+  .wraper
+  .skills
+  .content_skills
+  .container
+  .skills_item
+  .skills-block
+  .skills-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 17px;
 }
-body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner img {
+body
+  .wraper
+  .skills
+  .content_skills
+  .container
+  .skills_item
+  .skills-block
+  .skills-inner
+  img {
   width: 150px;
   border-radius: 10px;
 }
-body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner h3 {
-  font-family: "Montserrat", sans-serif;
+body
+  .wraper
+  .skills
+  .content_skills
+  .container
+  .skills_item
+  .skills-block
+  .skills-inner
+  h3 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
@@ -370,92 +432,214 @@ body .wraper .projects .content_projects .container {
 body .wraper .projects .content_projects .container .projects_item {
   padding: 65px 0;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-title {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-title {
   text-align: center;
   margin-bottom: 50px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-title h2 {
-  font-family: "Montserrat", sans-serif;
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-title
+  h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 56px;
   font-weight: 400;
   text-transform: uppercase;
   color: white;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 50px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
   overflow: hidden;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 60%;
   gap: 10px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .move_arrow {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .move_arrow {
   display: none;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .move_arrow .move {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .move_arrow
+  .move {
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 5px;
   border-radius: 10px;
   padding: 2px 5px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .move_arrow .move img {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .move_arrow
+  .move
+  img {
   width: 40px;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .move_arrow .move h2 {
-  font-family: "Montserrat", sans-serif;
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .move_arrow
+  .move
+  h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
   color: black;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  button {
   background: none;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button img {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  button
+  img {
   width: 30px;
   fill: white;
   color: white;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button:nth-child(1) {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  button:nth-child(1) {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .slider {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .slider {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .slider .images {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .slider
+  .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,40 +650,108 @@ body .wraper .projects .content_projects .container .projects_item .projects-mai
   -webkit-transition: ease 0.8s;
   transition: ease 0.8s;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .slider .images img {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .image_project
+  .slider
+  .images
+  img {
   max-width: 100%;
   height: auto;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .title {
   margin-bottom: 25px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
-  font-family: "Montserrat", sans-serif;
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .title
+  h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 600;
   color: white;
   line-height: 120%;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .description {
   margin-bottom: 50px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description h4 {
-  font-family: "Montserrat", sans-serif;
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .description
+  h4 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   color: white;
   line-height: 120%;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .links-project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .links-project
+  a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
@@ -509,7 +761,17 @@ body .wraper .projects .content_projects .container .projects_item .projects-mai
   border-radius: 10px;
   background: black;
 }
-body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a:hover {
+body
+  .wraper
+  .projects
+  .content_projects
+  .container
+  .projects_item
+  .projects-main
+  .project_block
+  .project-description
+  .links-project
+  a:hover {
   background: white;
   color: black;
   -webkit-transition: linear 0.3s;
@@ -536,24 +798,44 @@ body .wraper .contacts .content_contacts .container .contacts_item {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 30px;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me img {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  img {
   width: 40px;
   margin-right: 10px;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me h3 {
-  font-family: "Montserrat", sans-serif;
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  h3 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 400;
   color: Black;
@@ -561,47 +843,89 @@ body .wraper .contacts .content_contacts .container .contacts_item .contacts_me 
   border-bottom: 1px solid white;
   padding-bottom: 2px;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me h3:hover {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  h3:hover {
   border-bottom: 1px solid black;
   -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me hr {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  hr {
   width: 1px;
   height: 50px;
   background: black;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me .email {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me .telegram {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  .telegram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me .phone {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-body .wraper .contacts .content_contacts .container .contacts_item .contacts_me .github {
+body
+  .wraper
+  .contacts
+  .content_contacts
+  .container
+  .contacts_item
+  .contacts_me
+  .github {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 body .wraper .footer {
   width: 100%;
@@ -611,7 +935,7 @@ body .wraper .footer {
 body .wraper .footer h3 {
   text-align: center;
   padding: 65px 0 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 200;
   color: white;
@@ -628,28 +952,65 @@ body .wraper .footer h3 {
     width: 300px;
   }
 
-  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me {
+  body
+    .wraper
+    .contacts
+    .content_contacts
+    .container
+    .contacts_item
+    .contacts_me {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
 
-  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me hr {
+  body
+    .wraper
+    .contacts
+    .content_contacts
+    .container
+    .contacts_item
+    .contacts_me
+    hr {
     display: none;
   }
 }
 @media screen and (max-width: 900px) {
-  body .wraper .about-me .content .container .about-me_item .title .description h3 {
+  body
+    .wraper
+    .about-me
+    .content
+    .container
+    .about-me_item
+    .title
+    .description
+    h3 {
     font-size: 20px;
   }
 
-  body .wraper .about-me .content .container .about-me_item .title .description h2 {
+  body
+    .wraper
+    .about-me
+    .content
+    .container
+    .about-me_item
+    .title
+    .description
+    h2 {
     font-size: 34px;
   }
 
-  body .wraper .about-me .content .container .about-me_item .title .description h4 {
+  body
+    .wraper
+    .about-me
+    .content
+    .container
+    .about-me_item
+    .title
+    .description
+    h4 {
     font-size: 20px;
   }
 
@@ -662,33 +1023,80 @@ body .wraper .footer h3 {
     width: 200px;
   }
 
-  body .wraper .skills .content_skills .container .skills_item .skills-title h2 {
+  body
+    .wraper
+    .skills
+    .content_skills
+    .container
+    .skills_item
+    .skills-title
+    h2 {
     font-size: 32px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-title h2 {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-title
+    h2 {
     font-size: 32px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .image_project {
     max-width: 80%;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .title {
     margin-bottom: 10px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .description {
     margin-bottom: 20px;
   }
 
@@ -711,23 +1119,46 @@ body .wraper .footer h3 {
 
   body .wraper .header .container .header_item {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .nav-link {
     display: none;
   }
 
-  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner {
+  body
+    .wraper
+    .skills
+    .content_skills
+    .container
+    .skills_item
+    .skills-block
+    .skills-inner {
     gap: 10px;
   }
 
-  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner img {
+  body
+    .wraper
+    .skills
+    .content_skills
+    .container
+    .skills_item
+    .skills-block
+    .skills-inner
+    img {
     width: 80px;
   }
 
-  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner h3 {
+  body
+    .wraper
+    .skills
+    .content_skills
+    .container
+    .skills_item
+    .skills-block
+    .skills-inner
+    h3 {
     font-size: 12px;
   }
 
@@ -736,36 +1167,88 @@ body .wraper .footer h3 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 15px;
     row-gap: 30px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .image_project {
     max-width: 100%;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .title
+    h2 {
     font-size: 24px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description h4 {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .description
+    h4 {
     font-size: 14px;
     font-weight: 200;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .links-project
+    a {
     padding: 10px 15px;
   }
 
-  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me h3 {
+  body
+    .wraper
+    .contacts
+    .content_contacts
+    .container
+    .contacts_item
+    .contacts_me
+    h3 {
     font-size: 18px;
   }
 
-  body .wraper .contacts .content_contacts .container .contacts_item .contacts_me img {
+  body
+    .wraper
+    .contacts
+    .content_contacts
+    .container
+    .contacts_item
+    .contacts_me
+    img {
     width: 30px;
   }
 }
@@ -783,8 +1266,8 @@ body .wraper .footer h3 {
     padding-top: 52px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   body .wraper .about-me .content .container .about-me_item img {
@@ -796,16 +1279,40 @@ body .wraper .footer h3 {
     width: 100%;
   }
 
-  body .wraper .about-me .content .container .about-me_item .title .description h3 {
+  body
+    .wraper
+    .about-me
+    .content
+    .container
+    .about-me_item
+    .title
+    .description
+    h3 {
     display: none;
   }
 
-  body .wraper .about-me .content .container .about-me_item .title .description h2 {
+  body
+    .wraper
+    .about-me
+    .content
+    .container
+    .about-me_item
+    .title
+    .description
+    h2 {
     text-align: center;
     font-size: 52px;
   }
 
-  body .wraper .about-me .content .container .about-me_item .title .description h4 {
+  body
+    .wraper
+    .about-me
+    .content
+    .container
+    .about-me_item
+    .title
+    .description
+    h4 {
     text-align: center;
     margin-top: 0px;
     font-size: 20px;
@@ -815,8 +1322,8 @@ body .wraper .footer h3 {
 
   body .wraper .about-me .content .container .about-me_item .title .buttons {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 15px;
   }
 
@@ -825,23 +1332,56 @@ body .wraper .footer h3 {
     row-gap: 20px;
   }
 
-  body .wraper .skills .content_skills .container .skills_item .skills-block .skills-inner {
+  body
+    .wraper
+    .skills
+    .content_skills
+    .container
+    .skills_item
+    .skills-block
+    .skills-inner {
     width: 25%;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .image_project {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project button {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .image_project
+    button {
     display: none;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .image_project .move_arrow {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .image_project
+    .move_arrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -853,15 +1393,25 @@ body .wraper .footer h3 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .description h4 {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .description
+    h4 {
     font-size: 12px;
   }
 
@@ -869,20 +1419,53 @@ body .wraper .footer h3 {
     font-size: 14px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .title h2 {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .title
+    h2 {
     font-size: 22px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block .project-description .links-project a {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block
+    .project-description
+    .links-project
+    a {
     padding: 15px 25px;
     font-size: 18px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main .project_block {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main
+    .project_block {
     gap: 15px;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-main {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-main {
     gap: 70px;
   }
 
@@ -890,7 +1473,13 @@ body .wraper .footer h3 {
     padding: 55px 0;
   }
 
-  body .wraper .projects .content_projects .container .projects_item .projects-title {
+  body
+    .wraper
+    .projects
+    .content_projects
+    .container
+    .projects_item
+    .projects-title {
     margin-bottom: 20px;
   }
 
